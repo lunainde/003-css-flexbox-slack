@@ -1,0 +1,300 @@
+/*
+background purple: #540B51
+background ivory: #F3EAE2
+button blue: #4285F4
+titles black: #191817
+paragraph black: #000000
+paragraph yellow: #ECB12F
+links blue: #2E71A6
+footer links grey: #454245
+*/
+
+/* no white margin around page (default setting) */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica, sans-serif;
+}
+body li {
+    list-style: none;
+}
+:root {
+    --first-color: #540B51;
+    --hover-color: #41023f;
+    --second-color: #F3EAE2;
+}
+
+/* -----------------------------------NAVABAR */
+/* display-flex = inline-flex */
+nav{
+    display: flex; 
+    justify-content: space-between;
+    /* align-item = vertically */
+    align-items: center;
+    margin: 16px;
+    padding: 4%;
+}
+#logo img{
+    width: 125px;
+}
+.nav-links ul{
+    display: flex;
+    gap: 24px;
+}
+.nav-links li {
+    display: block;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav div:last-child{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-search {
+    align-items: center;
+    gap: 16px;
+    
+}
+.btn-search{
+    background-color: #540B51;
+    border: 0;
+}
+#btn-login {
+    background-color: whitesmoke;
+    border: none;
+    color: #540B51;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+/* ----------------------------------HERO */
+#hero{
+    background-color:#540B51;
+    color: white;
+    height:100vh;
+}
+header {
+    margin-left: 16px;
+    display: flex;
+    margin: 4vw
+}
+.intro h1{
+    color: white;
+    font-size: 92px;
+}
+.intro p{
+    padding-top: 24px;
+    font-size: 18px;
+}
+.txt-yellow {
+    color: #ECB12F;
+}
+.btn-cta button{
+    border-radius: 4px;
+}
+
+
+/* --------------------------------------hero-right */
+.container-hero-img {
+    display: inline-block;
+}
+.container-hero-img img{
+    margin-top: 150px;
+    height: 500px;
+    align-items: center;
+}
+.intro, .intro-img {
+    display: flex;
+    width: 50vw;
+}
+.intro {
+    padding-right: 8rem;
+}
+.intro-img {
+    height: 400px;
+}
+
+/* -------------------------------------LEFT SIDE- */
+.cta {
+    margin-top: 56px;
+}
+.btn-email{
+    color: #540B51;
+}
+.btn-google{
+    flex-direction: row;
+    background-color: #4285F4;
+}
+.btn-google img{
+    background-color: whitesmoke;
+    width: 36px;
+}
+.btn-google span{
+    color: white;
+}
+.btn-cta button{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px;
+    align-items: center;
+    border: 0;
+}
+
+/* -------------------------------------SECTION - SPONSORS-*/
+.sponsors {
+    background-color: #F3EAE2;
+}
+.sponsors p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 32px;
+    color: #540B51;
+}
+.sponsor-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.logo {
+    height: 48px;
+}
+
+/* -----------------------------------SECTION TEAM */
+.section-titles h3{
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    color: #540B51;
+    font-size: 3rem;
+}
+
+/* -------------------------------------------- */
+.collaboration {
+    margin: 0px 10%;
+}
+.collaboration h4 {
+padding-bottom: 18px;
+}
+.collaboration-list li{  
+    padding-bottom: 18px;
+}
+hr.divider {
+    margin-top: 8px;
+    border: 1px solid #540B51;
+}
+
+/* --------------------------------------------- */
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    padding: 16px 32px;
+    color: whitesmoke;
+    background-color: var(--first-color);
+    border-radius: 4px;
+    border: none;
+    margin: 32px 32px;
+}
+.btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* ------------------------------FOOTER */
+footer {
+    background-color: #540B51;
+    color: whitesmoke;
+}
+footer h4 {
+    padding-bottom: 8px;
+}
+.footer-col {
+    display: flex;
+    justify-content: space-around;
+    padding: 32px;
+}
+/* .container-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+/* ----------middle---------------- */
+#follow-us .footer-icon {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+    flex-direction: row
+}
+/* -------------rights------------ */
+.container-rights {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ============================================RESPONSIVE-- */
+
+  /* MOBILE Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .sponsor-logo div {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* MOBILE-PORTRAIT Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .sponsor-logo div {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* TABLET Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .sponsor-logo div {
+        display: inline-block;
+    }
+}
+
+/* LAPTOP Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .sponsor-logo div {
+        display: inline-block;
+    }
+}
+
+/* DESKTOP Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .sponsor-logo div {
+        display: inline-block;
+    }
+}

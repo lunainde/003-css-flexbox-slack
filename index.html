@@ -19,93 +19,85 @@
 
 <body>
   <!-- -------------------------------NAVBAR----------- -->
-  <section id="hero">
-    <nav>
-      <!-- LOGO -->
-      <div id="logo">
-        <img src="./images/slack-logo.png" alt="Slack logo" />
-      </div>
-      <!-- MENU LINKS -->
-      <div class="nav-links">
-        <ul>
-          <li>
-            <a href="#">Product</a>
-          </li>
-          <li>
-            <a href="#">Solutions</a>
-          </li>
-          <li>
-            <a href="#">Resources</a>
-          </li>
-          <li>
-            <a href="#">Pricing</a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-search">
-        
-        <button class="btn-search">
-          <img src="./images/icon-search.png" alt="Search icon">
-        </button>
-        
+  <nav>
+    <!-- LOGO -->
+    <div class="nav-logo">
+      <img src="./images/slack-logo.png" alt="Slack logo" />
+    </div>
+    <!-- MENU LINKS -->
+    <div class="nav-links">
+      <ul>
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Solutions</a>
+        </li>
+        <li>
+          <a href="#">Resources</a>
+        </li>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-search">
+      <button class="btn-search">
+        <img src="./images/icon-search.png" alt="Search icon">
+      </button>
+      <button class="btn-sign-in">
         <p class="lable-login">Sign in</p>
-
-        <!-- LOGIN - FORM -->
-        <form action="" method="post">
-          <div class="container">
-            <!-- <label for="uname"><b>Username</b></label>
+      </button>
+      
+      <!-- LOGIN - FORM -->
+      <form action="" method="post">
+        <div class="container">
+          <!-- <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
-        
+            
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required> -->
-        
-            <button id="btn-login" type="submit">TRY FOR FREE</button>
+            
+            <button class="btn-try-free" type="submit">TRY FOR FREE</button>
             <!-- <label>
               <input type="checkbox" checked="checked" name="remember"> Remember me
             </label> -->
           </div>
         </form>
-          <!-- -----HAMBURGER MENU -->
-          <!-- <div>
-            <button>
-              <img src="./images/icon-menu.png" alt="Menu icon">
-            </button>
-        </div> -->
+        <!-- -----HAMBURGER MENU -->
+        <div>
+          <button class="menu-mobile">
+            <img src="./images/icon-menu.png" alt="Menu icon">
+          </button>
+        </div>
       </div>
     </nav>
-
-<!--------------------------------- HERO SECTION IN 2 ---------------------------->
-    <header>
-
-      <!-- <div class="container"> -->
-        <!-- ------------INTO - COOKIES-->
-            <div class="intro">
-              <div class="intro-cta">
+<header> 
+  <!--------------------------------- HERO SECTION IN 2 ---------------------------->
+  
+    <section id="hero">
+    <!-- ------------INTO - COOKIES-->
+    <div class="intro-cta">
+      <h1 class="intro-title">Great teamwork starts with a digital HQ</h1>
       
-                <h1>Great teamwork starts with a digital HQ</h1>
-      
-                <div class="cta">
-                  <p><span class="txt-yellow">Slack is free to try</span> for as long as you'd like.</p>
+        <div class="cta">
+          <p><span class="txt-yellow">Slack is free to try</span> for as long as you'd like.</p>
                   
-                <div class="btn-cta">
-                    <button class="btn-email">Sign up with email</button>
-                    <button class="btn-google">
-                      <img src="./images/logo-google.png" alt="Google logo" />
-                      <span>Sign up with Google</span>
-                    </button>
-                </div> 
-                </div>
-      
-              </div>
-            </div>
-       <!-- ----------------------intro - right image-->
-            <div class="container-image">
-              <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
-            </div>
-      <!-- </div> -->
-    </header>
+          <div class="btn-cta">
+            <button class="btn-email">Sign up with email</button>
+            <button class="btn-google">
+              <img src="./images/logo-google.png" alt="Google logo" />
+              <p>Sign up with Google</p>
+            </button>
+          </div> 
+        </div>
+    </div>
+    <!-- ----------------------intro - right image-->
+    <div class="intro-img">
+        <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+    </div>
   </section>
-
+</header>
 
   <!-- ----------------------------SECTION 2 - SPONSORS-------------- -->
   <main>
@@ -127,7 +119,7 @@
 
 
 <!------------------------------- SECTION 3 - TEAM -------------------->
-    <section class="section-titles">
+    <section class="section-team">
       <h3>Teams large and small rely on Slack</h3>
 
       <div class="collaboration">
@@ -138,17 +130,19 @@
           <li><p><span>86%</span> feel their ability to work remotely has improved has improved</p></li>
           <li><p><span>88%</span> feel more connected to their teams*</p></li>
         </ul>
-        <hr class="divider">
       </div>
     </section>
 
 <!----------------------------- SECTION 4 - WELCOME -------------------->
-    <section class="section-titles">
-      <h3>Welcome to your new digital HQ</h3>
-      <div class="container-btn">
-        <button class="btn">Try for free</button>
-        <button class="btn">Talk to sales</button>
-      </div>
+    <section class="section-welcome">
+      
+        <h3>Welcome to your new digital HQ</h3>
+        <div class="container-btn">
+          <button class="btn-try">Try for free</button>
+          <button class="btn-talk">Talk to sales</button>
+        </div>
+
+     
     </section>
 
   </main>
